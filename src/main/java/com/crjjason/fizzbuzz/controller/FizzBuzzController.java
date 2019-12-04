@@ -16,7 +16,7 @@ public class FizzBuzzController {
 	public ResponseEntity<String> startFizzBuzz(){
 		FizzBuzzBO bo = new FizzBuzzBO(100);
 		List<String> array = bo.generateArray();
-		String result = array.stream().reduce((e1,e2) -> "**" + e1 + "<br/>" + e2).get();
+		String result = array.stream().reduce((e1,e2) -> "*feature/a*" + e1 + "<br/>" + e2).get();
 		return ResponseEntity.ok(result);
 	}
 }
